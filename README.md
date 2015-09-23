@@ -1,6 +1,8 @@
 # example-toolbar-animation
 An example Android project to show how to animate changing the toolbar and status bar colors with a circular reveal effect.
 
+![Example of the Effect](http://i.stack.imgur.com/NpVCi.gif)
+
 See http://stackoverflow.com/questions/27872324/how-can-i-animate-the-color-change-of-the-statusbar-and-toolbar-like-the-new-ca
 
 The general idea is to set your actionbar and status bar to transparent.  This will shift your actionbar up under the statusbar so you have to adjust the size and padding of the actionbar to compensate.  You then use a view behind it and `ViewAnimationUtils.createCircularReveal` to reveal the new background color.  You need one more view behind that to show the old background color as the middle view is revealing the new one.
